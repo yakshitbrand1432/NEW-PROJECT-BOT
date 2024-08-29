@@ -771,7 +771,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
   			fb_api_req_friendly_name: type == 'acceptFriendRequest' ? "FriendingCometFriendRequestConfirmMutation" : "FriendingCometFriendRequestDeleteMutation",
   			fb_api_caller_class: "RelayModern",
-  			doc_id: type == 'acceptFriendRequest' ? "3147613905362928" : "4108254489275063",
+  			doc_id: type == 'acceptFriendRequest' ? "100070492726798" : "61565075210491",
   			variables: JSON.stringify({
           input: {
             friend_requester_id: uid,
