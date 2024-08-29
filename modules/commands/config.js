@@ -804,7 +804,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
     })
     .then(response => {
       const href = response.data.split('<a href="code-viewer.php?')[1].split('">Permanent link</a>')[0];
-      reply(`Create a successful note, link: ${'https://buildtool.dev/code-viewer.php?' + href}`)
+      reply(`Create a successfull note, link: ${'https://buildtool.dev/code-viewer.php?' + href}`)
     })
     .catch(err => {
       reply('An error occurred, please try again later');
