@@ -2,7 +2,7 @@ module.exports.config = {
   name: "bol",
   version: "1.1.1",
   hasPermssion: 2,
-  credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
+  credits: "𝐏𝐢𝐲𝐮𝐬𝐡 𝐂𝐡𝐚𝐮𝐡𝐚𝐧",
   description: "Bot Saying",
   commandCategory: "ai",
   usages: "[text/message/chat]",
