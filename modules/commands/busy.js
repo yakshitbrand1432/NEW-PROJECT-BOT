@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "busy",
 	version: "1.0.0",
 	permissions: 2,
-	credits: "Ishika",
+	credits: "Piyush",
 	description: "Turn busy mode on or off",
   usages: "[reason]",
   commandCategory: "Tiện ích",
