@@ -455,7 +455,7 @@ let data = ["237318537087806","237321127087547","237317790421214","2373191404210
                  johnlester > "13:00:00" && johnlester <= "18:00:00" ? "Good afternoon everyone" :
                  johnlester > "18:00:00" && johnlester <= "20:00:00" ? "Good evening everyone. don't forget your dinner" :
                  johnlester > "20:00:00" && johnlester <= "23:00:00" ? "Good evening everyone" : "Hello everyone have a nice day") 
-var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋"];
+var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋","👍"];
 console.log(chalk.bold.hex("#00FF00")("[ AUTO GREET ] ❯ ") + chalk.hex("#00FF00")("is enable"))
      setInterval(() => {console.log(chalk.bold.hex("#00FF00")("[ AUTO GREET ] ❯ ") + chalk.hex("#00FF00")("is enable"))}, 60000)
 var count = []
@@ -870,7 +870,7 @@ cron.schedule('59 0 0 * * *', () => {
                  johnlester > "13:00:00" && johnlester <= "18:00:00" ? "Good afternoon everyone" :
                  johnlester > "18:00:00" && johnlester <= "20:00:00" ? "Good evening everyone. don't forget your dinner" :
                  johnlester > "20:00:00" && johnlester <= "23:00:00" ? "Good evening everyone" : "Hello everyone have a nice day")
-var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋"];
+var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋","👍"];
     var johnlesteremojirandom = lesteremoji[Math.floor(Math.random() * lesteremoji.length)];
     var currentYear = moment.tz("Asia/Dhaka").format("LLLL");
     function getGUID() {
