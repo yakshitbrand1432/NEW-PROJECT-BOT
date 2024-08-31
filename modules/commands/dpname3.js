@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "dpname",
+  name: "dpname3",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Mr Chand",
@@ -48,29 +48,29 @@ module.exports.run = async function ({ api, event, args, Users }) {
   let pathImg = __dirname + `/cache/drake.png`;
   const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\=)/g, "+").replace(/\|\s+/g, "+").split("+");
   let getImage = (
-    await axios.get(encodeURI(`https://i.imgur.com/Vu0AYmH.jpg`), {
+    await axios.get(encodeURI(`https://i.imgur.com/3QIQkKj.jpg`), {
       responseType: "arraybuffer",
     })
   ).data;
   fs.writeFileSync(pathImg, Buffer.from(getImage, "utf-8"));
-if(!fs.existsSync(__dirname+'/cache/SVN-Arial 2.ttf')) { 
+if(!fs.existsSync(__dirname+'/cache/SNAZZYSURGE.ttf')) { 
       let getfont = (await axios.get(`https://drive.google.com/u/0/uc?id=11YxymRp0y3Jle5cFBmLzwU89XNqHIZux&export=download`, { responseType: "arraybuffer" })).data;
-       fs.writeFileSync(__dirname+"/cache/SVN-Arial 2.ttf", Buffer.from(getfont, "utf-8"));
+       fs.writeFileSync(__dirname+"/cache/SNAZZYSURGE.ttf", Buffer.from(getfont, "utf-8"));
     };
   let baseImage = await loadImage(pathImg);
   let canvas = createCanvas(baseImage.width, baseImage.height);
   let ctx = canvas.getContext("2d");
   ctx.drawImage(baseImage, 0, 0, canvas.width, canvas.height);
-  Canvas.registerFont(__dirname+`/cache/SVN-Arial 2.ttf`, {
-        family: "SVN-Arial 2"
+  Canvas.registerFont(__dirname+`/cache/SNAZZYSURGE.ttf`, {
+        family: "SNAZZYSURGE"
     });
-  ctx.font = "30px SVN-Arial 2";
-  ctx.fillStyle = "#000000";
-  ctx.textAlign = "center";
+  ctx.font = "21px SNAZZYSURGE";
+  ctx.fillStyle = "#DF07D8";
+  ctx.textAlign = "small";
   const line = await this.wrapText(ctx, text[0], 400);
-  const lines = await this.wrapText(ctx, text[1], 464);
-  ctx.fillText(line.join("\n"), 320, 165)
-  ctx.fillText(lines.join("\n"), 170, 340)
+  const lines = await this.wrapText(ctx, text[1], 440);
+  ctx.fillText(line.join("\n"), 120, 300)
+  ctx.fillText(lines.join("\n"), 265, 365)
   ctx.beginPath();
   const imageBuffer = canvas.toBuffer();
   fs.writeFileSync(pathImg, imageBuffer);

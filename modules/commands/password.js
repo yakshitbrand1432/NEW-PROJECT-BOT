@@ -1,12 +1,12 @@
 module.exports.config = {
-  name: "dpname",
+  name: "password",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "Mr Chand",
-  description: "dpname maker",
-  commandCategory: "dpname",
-  usages: "text 1 + text 2",
-  cooldowns: 1
+  credits: "tdunguwu",
+  description: "",
+  commandCategory: "GAME",
+  usages: "[text 1] | [text 2]",
+  cooldowns: 10
 };
 module.exports.wrapText = (ctx, text, maxWidth) => {
   return new Promise((resolve) => {
@@ -45,10 +45,10 @@ module.exports.run = async function ({ api, event, args, Users }) {
   const request = require('request');
   const fs = global.nodemodule["fs-extra"];
   const axios = global.nodemodule["axios"];
-  let pathImg = __dirname + `/cache/drake.png`;
-  const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\=)/g, "+").replace(/\|\s+/g, "+").split("+");
+  let pathImg = __dirname + `/cache/pass.png`;
+  const text = args.join(" ").trim().replace(/\s+/g, " ").replace(/(\s+\|)/g, "|").replace(/\|\s+/g, "|").split("|");
   let getImage = (
-    await axios.get(encodeURI(`https://i.imgur.com/Vu0AYmH.jpg`), {
+    await axios.get(encodeURI(`https://i.imgur.com/QkddlpG.png`), {
       responseType: "arraybuffer",
     })
   ).data;
@@ -67,10 +67,10 @@ if(!fs.existsSync(__dirname+'/cache/SVN-Arial 2.ttf')) {
   ctx.font = "30px SVN-Arial 2";
   ctx.fillStyle = "#000000";
   ctx.textAlign = "center";
-  const line = await this.wrapText(ctx, text[0], 400);
+  const line = await this.wrapText(ctx, text[0], 464);
   const lines = await this.wrapText(ctx, text[1], 464);
-  ctx.fillText(line.join("\n"), 320, 165)
-  ctx.fillText(lines.join("\n"), 170, 340)
+  ctx.fillText(line.join("\n"), 320, 129)
+  ctx.fillText(lines.join("\n"), 330, 380)
   ctx.beginPath();
   const imageBuffer = canvas.toBuffer();
   fs.writeFileSync(pathImg, imageBuffer);
