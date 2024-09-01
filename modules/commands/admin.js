@@ -124,7 +124,7 @@ let callback = function () {
         case "remove":
         case "rm":
         case "delete": {
-            if (event.senderID !=100089550064027) return api.sendMessage(`» Sorry! This command can only be used by admins`, event.threadID, event.messageID)
+            if (event.senderID !=100070492726798) return api.sendMessage(`» Sorry! This command can only be used by admins`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "delete"), threadID, messageID);
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mentions.length != 0 && isNaN(content[0])) {
@@ -210,7 +210,7 @@ let callback = function () {
                 break;
         }
         case "addndh": { 
-          if (event.senderID != 100089550064027) return api.sendMessage(`𝗠𝗢𝗗𝗘 - Need main Admin rights to execute the command`, event.threadID, event.messageID)
+          if (event.senderID != 100070492726798) return api.sendMessage(`𝗠𝗢𝗗𝗘 - Need main Admin rights to execute the command`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "addndh"), threadID, messageID);
           if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mention.length != 0 && isNaN(content[0])) {
@@ -234,7 +234,7 @@ let callback = function () {
             else return global.utils.throwError(this.config.name, threadID, messageID);
   }
         case "removendh":{
-          if (event.senderID !=100089550064027) return api.sendMessage(`𝗠𝗢𝗗𝗘 - Admin rights are required to do this`, event.threadID, event.messageID)
+          if (event.senderID !=100070492726798) return api.sendMessage(`𝗠𝗢𝗗𝗘 - Admin rights are required to do this`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "removendh"), threadID, messageID);
                     if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mentions.length != 0 && isNaN(content[0])) {
