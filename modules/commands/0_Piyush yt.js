@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "Piyush",
+	name: "Piyush yt",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "PIYUSH", 
@@ -13,7 +13,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("piyush") ||
-     react.includes("PIYUSH") || react.includes("Jay shri sitaram") || react.includes("radhe radhe") ||
+     react.includes("PIYUSH") || react.includes("piyush yt") || react.includes("tricker yt link") ||
 react.includes("tricker") ||
 react.includes("yt link")) {
 		var msg = {
