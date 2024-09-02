@@ -13,11 +13,11 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("ram ram") ||
-     react.includes("RAM RAM") || react.includes("Jay shri radhe") || react.includes("radhe radhe") ||
+     react.includes("RAM RAM") || react.includes("Jay shri sitaram") || react.includes("radhe radhe") ||
 react.includes("jay shree ram") ||
 react.includes("sitaram")) {
 		var msg = {
-				body: `【  जय _श्री _राम _________🚩❤️🙏  】`,
+				body: `【  जय _श्री _राम _____🚩❤️🙏  】`,
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙏", event.messageID, (err) => {}, true)
