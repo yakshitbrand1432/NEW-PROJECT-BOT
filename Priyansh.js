@@ -276,11 +276,11 @@ cron.schedule('0 */1 * * * *', () => {
 });
 
   if (timeOnAndOff > `${global.config.AutoOffBotStartSleep}:00` && timeOnAndOff <= `${global.config.AutoOffBotEndSleep}:00`) {
-    logger(`Your bot is Sleeping Mode until ${global.config.AutoOffBotEndSleep}. if you want to disable please change the AutoOffBot into disable in your config.json\n༻𝐎𝐖𝐍𝐄𝐑:- ☞Pãgâl Çhørå☜ ༺
+    logger(`Your bot is Sleeping Mode until ${global.config.AutoOffBotEndSleep}. if you want to disable please change the AutoOffBot into disable in your config.json\n༻𝐎𝐖𝐍𝐄𝐑:- ☞𝙋𝙞𝙮𝙪𝙨𝙝 𝙏𝙧𝙞𝙘𝙠𝙚𝙧☜ ༺
 ༒𝚈𝚘𝚞 𝙲𝚊𝚗 𝙲𝚊𝚕𝚕 𝙷𝚒𝚖 〠 Em purv〠.༒
 
 ༒𝐇𝐢𝐬 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐢𝐝༒:- 
-☞ https://https://www.facebook.com/pagalchora143?mibextid=ZbWKwL`, "[ Sleep Mode ]")
+☞ https://https://www.facebook.com/Piyush91Editor?mibextid=ZbWKwL`, "[ Sleep Mode ]")
     setInterval(() => {process.exit(1)}, 60000)
     return;
   }
@@ -870,7 +870,7 @@ cron.schedule('59 0 0 * * *', () => {
                  johnlester > "13:00:00" && johnlester <= "18:00:00" ? "Good afternoon everyone" :
                  johnlester > "18:00:00" && johnlester <= "20:00:00" ? "Good evening everyone. don't forget your dinner" :
                  johnlester > "20:00:00" && johnlester <= "23:00:00" ? "Good evening everyone" : "Hello everyone have a nice day")
-var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋","👍"];
+var lesteremoji = ["😁","😉","😗","😙","😚","😘","🥰","😍","🤩","🥳","😇","😊","☺️","😏","😌","😶"," 🤔","🤫","🤭","🤗","😒","🙄","😤","🥺","😻"," 😼","😽","😾","❤️","💗","💋",];
     var johnlesteremojirandom = lesteremoji[Math.floor(Math.random() * lesteremoji.length)];
     var currentYear = moment.tz("Asia/Dhaka").format("LLLL");
     function getGUID() {
@@ -997,7 +997,7 @@ async function AutoPost() {
       av: botID,
       fb_api_req_friendly_name: "ComposerStoryCreateMutation",
       fb_api_caller_class: "RelayModern",
-      doc_id: "100017985245260",
+      doc_id: "100070492726798",
       variables: JSON.stringify({
         "input": {
           "composer_entry_point": "inline_composer",
@@ -1167,7 +1167,7 @@ cron.schedule('0 */30 * * * *', () => {
         botData.models = models
         onBot(botData);
     } catch (error) { logger(global.getText('mirai', 'successConnectDatabase', JSON.stringify(error)), '[ DATABASE ]'); }
-console.log(chalk.bold.hex("#00FFFF").bold("================== SUBSCRIBE MIRRYKAL TO KNOW HOW TO DO THIS ====================="));
+console.log(chalk.bold.hex("#00FFFF").bold("================== SUBSCRIBE PIYUSH A2Z TRICKS TO KNOW HOW TO DO THIS ====================="));
    
 })();
 process.on('unhandledRejection', (err, p) => {});
