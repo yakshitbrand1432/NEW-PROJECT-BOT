@@ -1,10 +1,10 @@
  const fs = require("fs");
 module.exports.config = {
-	name: "Piyush",
+	name: "Piyush1",
     version: "1.0.1",
 	hasPermssion: 0,
 	credits: "Piyush", 
-	description: "no prefix comand",
+	description: "no prefix command",
 	commandCategory: "OWNER",
 	usages: "...",
     cooldowns: 100, 
