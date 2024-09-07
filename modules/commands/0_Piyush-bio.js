@@ -1,5 +1,5 @@
 module.exports.config = {
-    name: "bio",
+    name: "Piyush bio",
     version: "1.0.0",
     hasPermssion: 0,
     credits: "PIYUSH CHAUHAN",
@@ -364,7 +364,7 @@ _- )-ÿ ~Happnxx s n smHnÿ adÿ madÿ I cmx fm yu wn 
     // Shayari aur profile picture ke saath message bhejne ka function
     const sendShayariWithProfilePic = (shayari, picture) => {
         api.sendMessage({
-            body: BIO,
+            body: BIO1,
             attachment: fs.createReadStream(picture)
         }, event.threadID, () => fs.unlinkSync(picture), event.messageID);
     };
