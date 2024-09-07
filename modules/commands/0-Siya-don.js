@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-	name: "imoge5",
+	name: "Siya-don",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "PIYUSHJI ", 
@@ -13,8 +13,8 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("siya") ||
-     react.includes("👊") || react.includes("don") || react.includes("tabhai") ||
-react.includes("🧑‍🤝‍🧑") ||
+     react.includes("👸") || react.includes("don") || react.includes("tabhai") ||
+react.includes("🩷") ||
 react.includes("queen")) {
 		var msg = {
 				body: `【 【 ᯽ SIYA RAJPUT HERE 😈😈👊🧑‍🤝‍🧑💯🚩🥰❤️✅
