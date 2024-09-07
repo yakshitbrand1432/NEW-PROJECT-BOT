@@ -1,6 +1,6 @@
 const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
-  name: "goibot",
+  name: "Bio1",
   version: "1.0.1",
   hasPermssion: 0,
   credits: "Fixed By Piyush Kumar",
@@ -17,8 +17,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   var id = event.senderID;
   var name = await Users.getNameUser(event.senderID);
 
-  var tl = ["["🖤💔Doηʈ BelıvƏ Aηɣoηə PeoplƏ Cɑη ChɑηgƏ Aηɣtıмə🙂💔🦋"-[🥀] " ,
-"🎭•×____🔐🖇️  °☆Oɣ ı hαtƏ 💔LovƏ ı Wαs αwʜ Grεαt AlοηƏ🌚LıfƏ Appııə LıfƏ•×🖕🏻😌  🎭•×____🖤🖇️ ",  
+  var tl = ["["🖤💔Doηʈ BelıvƏ Aηɣoηə PeoplƏ Cɑη ChɑηgƏ Aηɣtıмə🙂💔🦋"-[🥀]","🎭•×____🔐🖇️  °☆Oɣ ı hαtƏ 💔LovƏ ı Wαs αwʜ Grεαt AlοηƏ🌚LıfƏ Appııə LıfƏ•×🖕🏻😌  🎭•×____🖤🖇️ ",  
 "🎭    - ;))•°🎭  💋___☘¼-_🍁🐰_°Twɩŋĸɭɘ Twɩŋĸɭɘ Lɩttɭɘ Stʌʀ ʜot ʜot ʛɩʀɭ's ɩŋ ɱƴ Cʌʀ┼🐰─┼ ★🦋-[🥀] ",
 "Sɘxƴ Mʋŋɗʌ 👅°• "
 ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ
@@ -364,7 +363,7 @@ _-🎬 )-🎧  ~HappıınƏxx ıs n❍ʈ s❍mƏʈHınɡ  ɽƏadɣ  madƏ✨�
 "];
   var rand = tl[Math.floor(Math.random() * tl.length)]
    mess = "{name}"
-  if (event.body.indexOf("Bio") == 0 || (event.body.indexOf("bot") == 0)) {
+  if (event.body.indexOf("Bio1") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
       body: `🔶${name}🔶,  \n\n『\n   ${rand} 』\n\n❤️𝙲𝚛𝚎𝚍𝚒𝚝𝚜:𝐏𝐢𝐲𝐮𝐬𝐡 𝐂𝐡𝐚𝐮𝐡𝐚𝐧🌹 `
     }
